@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    animation: slideDown 1s ease;
+}
+
+header img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.8);
+    background: white;
+}
+
+
+/* SECTION */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeUp 1s ease;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5a4fcf;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* GALERI */
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #667eea;
+    color: white;
+}
+
+/* SOSIAL */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    font-size: 30px;
+    color: #667eea;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #764ba2;
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+    background: #667eea;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* PROFILE (STRUKTUR & SISWA) */
+.profile {
+    text-align: center;
+    animation: fadeUp 1s ease;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #667eea;
+    transition: 0.3s;
+}
+
+.profile:hover img {
+    transform: scale(1.1);
+}
+
+.profile h4 {
+    margin-top: 5px;
+    color: #333;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #666;
+}
+/* TENTANG KELAS */
+.tentang p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.tentang .intro {
+    font-size: 17px;
+}
+
+.info-kelas {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f3f4ff;
+    border-left: 5px solid #667eea;
+    border-radius: 10px;
+}
+
+.info-kelas p {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.tentang h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #5a4fcf;
+}
+
+.aturan {
+    padding-left: 20px;
+}
+
+.aturan li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE TEXT HP */
+@media (max-width: 600px) {
+    .tentang p {
+        font-size: 15px;
+        text-align: left;
+    }
+}
